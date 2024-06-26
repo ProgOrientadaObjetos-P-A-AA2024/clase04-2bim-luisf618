@@ -43,8 +43,12 @@ public class Ejecutor {
         listaArriendos.add(arriendoComida);
         listaArriendos.add(arriendoComercial);
         listaArriendos.add(arriendoSesiones);
+        listaArriendos.add(arriendoComida2);
         
         for (int i = 0; i < listaArriendos.size(); i++) {
+            // Utillizamos la lista para poder ocupar el metodo abstracto, ya
+            // que todos heredan de una clase abstracta donde se da el valor de 
+            // arriendoMensual;
             listaArriendos.get(i).establecerArriendoMensual(); // se llama al 
                                                             // métodos abstracto
             System.out.println(listaArriendos.get(i));
